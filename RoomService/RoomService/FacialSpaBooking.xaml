@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RoomService.FacialSpaBooking"
+             BackgroundColor="DimGray">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" VerticalOptions="CenterAndExpand" >
+            <Label FontSize="Medium" TextColor="Accent" Text="NOTE: Each session is 1 hour long." />
+            <DatePicker x:Name="datePicker"
+                        BackgroundColor="White" />
+            <TimePicker x:Name="timePicker"
+                        BackgroundColor="White"
+                        PropertyChanged="TimePicker_PropertyChanged" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="numofppl" BindingContext="{x:Reference stpr}" 
+                       FontSize="Medium" TextColor="Wheat"
+                       Text="{Binding Value, StringFormat='Number of People: {0:F0}'}"/>
+                <Stepper x:Name="stpr" Minimum="1" Maximum="8"
+                         ValueChanged="Stepper_ValueChanged"/>
+            </StackLayout>
+            <Button Text="Confirm" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "n05Ay1vjGUyRgEAl6YKsz+3VTquDFEXbOdc+gCTvJl8Mo4emmWKFQJVQGZzi+N0h8A9lAJTkzSH4/oex6SxK4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aarvo\\source\\repos\\RoomService\\RoomService\\RoomService\\RoomService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\aarvo\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
+    "C:\\Users\\aarvo\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+    "C:\\Users\\aarvo\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "C:\\Users\\aarvo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+  ],
+  "logs": []
+}

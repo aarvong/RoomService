@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RoomService.ServicePage"
+             Title="Room Service"
+             BackgroundColor="DimGray">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Record"
+                     Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <Grid VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Frame BorderColor="CornflowerBlue"
+                       CornerRadius="20"
+                       HasShadow="True">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_FoodDrinks" />
+                </Frame.GestureRecognizers>
+                <Label FontSize="Large" Text="Food&#10;and&#10;Drinks" 
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+            </Frame>
+            <Frame BorderColor="Yellow"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Grid.Column="1">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Booking" />
+                </Frame.GestureRecognizers>
+                <Label FontSize="Large" Text="Facilities&#10;Booking" 
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+            </Frame>
+            <Frame BorderColor="PaleVioletRed"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Grid.Column="2">
+                <Label FontSize="Large" Text="Call the&#10;Front Desk" 
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+    
+</ContentPage>

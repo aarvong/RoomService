@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RoomService.BeautyService"
+             Title="Beauty Services"
+             BackgroundColor="DimGray">
+    <ContentPage.Content>
+        <Grid VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Frame BorderColor="Red"
+                       CornerRadius="20"
+                       HasShadow="True">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_FacialSpa" />
+                </Frame.GestureRecognizers>
+                <Label FontSize="Large" Text="Facial&#10;and&#10;Spa" 
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+            </Frame>
+            <Frame BorderColor="Blue"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Grid.Column="1">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Salon" />
+                </Frame.GestureRecognizers>
+                <Label FontSize="Large" Text="Salon" 
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

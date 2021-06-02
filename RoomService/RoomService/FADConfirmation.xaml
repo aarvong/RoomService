@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RoomService.FADConfirmation"
+             Title="Confirmation"
+             BackgroundColor="DimGray">
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Confirmation" TextColor="White" 
+                   FontSize="36" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="White" FontSize="Medium"
+                       Text="Qunatity of Steak: " HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="steakQty" FontSize="Medium" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="White" FontSize="Medium"
+                       Text="Qunatity of Wine: " HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="wineQty" FontSize="Medium" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="White" FontSize="Medium"
+                       Text="Total: " HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="Total" FontSize="Medium" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
+                         Spacing="10">
+                <Button Text="Confirm" Clicked="OnConfirmClicked"/>
+                <Button Text="Cancel" Clicked="OnCancelClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

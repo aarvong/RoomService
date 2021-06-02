@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RoomService.FoodAndDrink"
+             Title="FoodAndDrinks"
+             BackgroundColor="DimGray">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" VerticalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
+                         BackgroundColor="White" Spacing="10">
+                <Image Source="https://media-cdn.tripadvisor.com/media/photo-s/17/61/6a/4b/in-our-house-marbled.jpg"/>
+                <Label Text="Steak" VerticalTextAlignment="Center"/>
+                <Label Text="Price: $100" VerticalTextAlignment="Center" Margin="0,0,10,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
+                         BackgroundColor="White" Spacing="10">
+                <Label x:Name="steakQty" VerticalTextAlignment="Center"
+                       BindingContext="{x:Reference steakStpr}" 
+                       Text="{Binding Value, StringFormat= 'Quantity: {0:F0}'}"/>
+                <Stepper x:Name="steakStpr" Minimum="0"
+                         ValueChanged="steakStpr_ValueChanged"
+                         />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
+                         BackgroundColor="White" Spacing="10">
+                <Image Source="https://www.watsonswine.com/medias/sys_master/front/zoom/8901008064542.png"/>
+                <Label Text="Wine" VerticalTextAlignment="Center"/>
+                <Label Text="Price: $150" VerticalTextAlignment="Center" Margin="0,0,10,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
+                         BackgroundColor="White" Spacing="10">
+                <Label x:Name="wineQty" VerticalTextAlignment="Center"
+                       BindingContext="{x:Reference wineStpr}" 
+                       Text="{Binding Value, StringFormat= 'Quantity: {0:F0}'}"/>
+                <Stepper x:Name="wineStpr" Minimum="0"
+                         ValueChanged="wineStpr_ValueChanged"/>
+            </StackLayout>
+           
+            <Button Text="Confirm" Clicked="OnButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

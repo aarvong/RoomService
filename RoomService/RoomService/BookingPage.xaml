@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RoomService.BookingPage"
+             Title="Facilities Booking"
+             BackgroundColor="DimGray">
+    <ContentPage.Content>
+        <Grid VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Frame BorderColor="Red"
+                   CornerRadius="20"
+                   HasShadow="True">
+                <Label FontSize="Large" Text="Restaurants" 
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
+            </Frame>
+            <Frame BorderColor="Yellow"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   Grid.Row="1">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Beauty" />
+                </Frame.GestureRecognizers>
+                <Label FontSize="Large" Text="Beauty Services" 
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+            </Frame>
+            <Frame BorderColor="Green"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Grid.Row="2">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Sport" />
+                </Frame.GestureRecognizers>
+                <Label FontSize="Large" Text="Sports" 
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
